@@ -1,0 +1,78 @@
+@import '../config/color.scss';
+
+
+.lists_wrap {
+    max-width: 2000px;
+    // transform: translate(0px, -100px);
+    padding-bottom: 20px;
+
+    @media (max-width: 600px) {
+        // transform: translate(0px, -50px);
+    }
+}
+
+.card_wrap {
+    max-width: 2000px;
+    width: '100%';
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    @media (max-width: 600px) {
+        // flex-direction: column;
+        // align-items: center;
+    }
+
+    @media (max-width: 1200px) {
+        width: '100%';
+
+    }
+}
+
+.lists_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 600px) {
+        padding: 0 10px;
+    }
+    @media (max-width: 1200px) {
+        padding-left: 20px;
+
+    }
+}
+
+.load_more {
+    color: $color_10;
+    font-weight: normal;
+    font-size: 1.3rem;
+    padding-left: 50px;
+    padding-top: 10px;
+    cursor: default;
+
+}
+
+.load_more:hover {
+    color: $color_9;
+}
+
+.card_wrap_l {
+    max-width: 2000px;
+    width: '100%';
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    @media (max-width: 600px) {
+        // flex-direction: column;
+        // align-items: center;
+    }
+    @media (max-width: 1200px) {
+        width: '100%';
+        justify-content: center;
+    }
+}
